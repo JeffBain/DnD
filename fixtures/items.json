@@ -1,0 +1,69 @@
+{
+    "weapons": [
+        {
+            "name": "Club",
+            "cost": 0.1,
+            "damage": "1d4",
+            "damageType": "Bludgeoning",
+            "weight": 2,
+            "martial": false,
+            "ranged": false,
+            "properties": {
+                "finesse": false,
+                "reach": false,
+                "light": true,
+                "two-handed": false,
+                "thrown": false,
+                "range": null,
+                "versatile": false,
+                "loading": false
+            }
+        },
+        {
+            "name": "Dagger",
+            "cost": 2,
+            "damage": "1d4",
+            "damageType": "Piercing",
+            "weight": 1,
+            "martial": false,
+            "ranged": false,
+            "properties": {
+                "finesse": true,
+                "reach": false,
+                "light": true,
+                "two-handed": false,
+                "thrown": true,
+                "range": [20, 60],
+                "versatile": false,
+                "loading": false
+            }
+        },
+        {
+            "name": "Greatclub",
+            "cost": 0.2,
+            "damage": "1d8",
+            "damageType": "Bludgeoning",
+            "weight": 10,
+            "martial": false,
+            "ranged": false,
+            "properties": {
+                "finesse": false,
+                "reach": false,
+                "light": false,
+                "two-handed": true,
+                "thrown": false,
+                "range": null,
+                "versatile": false,
+                "loading": false
+            }
+        }
+    ],
+    "armor": [
+
+    ],
+    "gear": [
+
+    ]
+
+
+}
