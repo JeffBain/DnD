@@ -1,0 +1,5 @@
+flask
+flask-graphql
+graphene==2.0.1
+graphene_sqlalchemy==2.0.0
+sqlalchemy==1.2.5
