@@ -10,7 +10,7 @@ class ItemInventoryMap(Base):
     __tablename__ = 'inventory_items'
     inventory_id = Column(types.Integer, ForeignKey('inventory.id'), primary_key=True)
     item_id = Column(types.Integer, ForeignKey('item.id'), primary_key=True)
-    item = relationship("Item", back_populates="owners")
+    item = relationship("Item", back_populates="inventories")
     inventory = relationship("Inventory", back_populates="items")
     quantity = Column(types.Integer)
 
@@ -20,7 +20,7 @@ class Item(Base):
     """
     __tablename__ = 'item'
     id = Column(types.Integer, primary_key=True)
-    owners = relationship(
+    inventories = relationship(
             "ItemInventoryMap",
             )
     name = Column(types.String)
@@ -28,6 +28,7 @@ class Item(Base):
 class Inventory(Base):
     __tablename__ = 'inventory'
     id = Column(types.Integer, primary_key=True)
+
     items = relationship(
             "ItemInventoryMap",
             )
